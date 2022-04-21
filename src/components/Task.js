@@ -1,10 +1,11 @@
 import React from "react";
+import { TASKS, CATEGORIES } from "../data";
 
-function Task() {
+function Task({ tasks, categories }) {
   return (
     <div className="task">
-      <div className="label">CATEGORY HERE</div>
-      <div className="text">TEXT HERE</div>
+      <div category={category} className="label">CATEGORY HERE</div>
+      <div text={text} className="text">TEXT HERE</div>
       <button className="delete">X</button>
     </div>
   );
